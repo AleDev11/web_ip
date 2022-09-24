@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../img/Fondo-negro.png);
+    background-size: cover;
+    background-position-y: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container img {
+    width: 37%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.4;
+    top: 0;
+    z-index: -1;
+    right: 82%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100% auto;
+    padding: 3% 6% 3% 6%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ffffff;
+    background-color: rgb(180, 180, 180);
+}
+
+.content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+button {
+    top: 12%;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+button:hover {
+    color: #e8e8e8;
+}
+
+button:hover::before {
+    width: 100%;
+}
